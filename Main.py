@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
@@ -13,4 +14,3 @@ def MostrarInicio(request: Request):
 
 @app.get("/Contactanos", response_class=HTMLResponse)
 def MostrarContactanos(request: Request):
-    return templates.TemplateResponse("Contactanos.html", {"request": request})
